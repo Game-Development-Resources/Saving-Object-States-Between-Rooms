@@ -37,4 +37,4 @@ Create the ds_map at Room End Event and then during the Room Start Event, check 
 
 ---
 
-I've imlemented all of this in an example project that you can download.
+I've implemented all of this in an example project that you can download.
