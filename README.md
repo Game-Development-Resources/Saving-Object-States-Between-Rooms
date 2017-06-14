@@ -32,3 +32,9 @@ You'll need to cycle through all of your creatures (creature_n) and add all the 
 DS_Map:
 
 	creatures_map[? room_name] = creatures_arr;
+	
+Create the ds_map at Room End Event and then during the Room Start Event, check to see if there's any data for the current room. If there is any data, delete all of the creatures in the room and then create new ones with the variables you have stored in the ds_map.
+
+---
+
+I've imlemented all of this in an example project that you can download.
