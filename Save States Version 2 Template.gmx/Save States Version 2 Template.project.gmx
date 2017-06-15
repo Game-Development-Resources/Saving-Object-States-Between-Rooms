@@ -6,17 +6,15 @@
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
-    <sprite>sprites\spr_creature_0</sprite>
+    <sprite>sprites\spr_creature</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
-  <fonts name="fonts">
-    <font>fonts\font0</font>
-  </fonts>
+  <fonts name="fonts"/>
   <objects name="objects">
     <object>objects\obj_controller</object>
     <object>objects\par_save_data</object>
-    <object>objects\obj_creature_0</object>
+    <object>objects\obj_creature</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>

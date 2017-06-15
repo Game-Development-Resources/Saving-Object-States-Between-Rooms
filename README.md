@@ -55,6 +55,48 @@ In this version, I've redone how the data is saved and loaded. Instead of the co
 2. At the start of a level, the controller object extracts data for the **current room** (if there is any) from the **ds_map**. The data is the **2D array**. The controller cycles through all of the data in the **2D array**. For each index, it creates an **object** (type of object is index[n, 0]) at **position** (0,0), and instantiates the object with **data** (index[n, 1]). This data is the **1D array** that the object built when the level had previously ended. Then the controller triggers the **<user defined event 0>**. In this event, the object assigns its variables to the data stored in the **1D array**.
 
 ---
+Using Version 2 in your game
+-
+
+If you want to use version 2 in your game, download the version 2 template and copy the code over (either straight into the events or into scripts and then call the scripts in the events).
+
+The only areas you will need to worry about editing are these:
+
+**obj_controller Create Event**
+
+	objects_to_save = par_save_data; // These are the objects you want to save data for
+
+If you change the parent object that you use to determine which objects get saved, you'll have to change this code to set objects_to_save to that different parent object.
+
+**obj_creature User Event 1**
+
+    // <add your variables here>
+    
+    // Examples:
+    // my_data[0] = variable_a;
+    // my_data[1] = variable_b;
+    // my_data[2] = variable_c;
+    // ...
+    // Keep adding as many variables as you want.
+    // Make sure they all have a unique index in my_data.
+    // (for every my_data[n], make n unique).
+    // Also, make sure that the values in User Defined 0 Event match these.
+
+You need to add all of the variables here (into the 1D array) that you want to get saved for this object.
+
+**obj_creature User Event 0**
+
+    // <add your variables here (must correspond to values in User Defined Event 1)>
+    // Examples:
+    // variable_a = my_data[0];
+    // variable_b = my_data[1];
+    // variable_c = my_data[2];
+    // ...
+
+You need copy the values from User Event 1 here so that all of your variables get loaded correctly.
+
+
+---
 Tutorial for **Save States Between Rooms.gmx**
 -
 
