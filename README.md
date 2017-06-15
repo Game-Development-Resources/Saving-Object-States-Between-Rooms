@@ -9,7 +9,7 @@ You do not have to give credit if you use this code in your game.
 Explanation
 -
 
-This tutorial shows one way to save the variables of objects in a room so that when you come back to the room, you can initialize all of the objects with their previous variables.
+This tutorial shows two ways to save the variables of objects in rooms so when you come back to a room you've been to before, you can initialize all of the objects with their previous variables.
 
 I made this tutorial in response to [this question on reddit](https://www.reddit.com/r/gamemaker/comments/6h989t/saving_object_states/).
 
