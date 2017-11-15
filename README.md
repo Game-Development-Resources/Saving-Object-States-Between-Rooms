@@ -24,7 +24,7 @@ The answer is that it depends on what you want to do. I've implemented two diffe
 I've included a **template for version 2** that only has relevant code (instead of an tutorial/example) if you would like to use that to build off of.
 
 ---
-Tutorial for **Save States Between Rooms 2.gmx**
+Tutorial for **Save States Between Rooms 2.gmx** (Version 2)
 -
 
 Check out the code in action here: http://pennpierson.com/gm_save_states_between_rooms_2/
@@ -97,7 +97,7 @@ You need copy the values from User Event 1 here so that all of your variables ge
 
 
 ---
-Tutorial for **Save States Between Rooms.gmx**
+Tutorial for **Save States Between Rooms.gmx** (Version 1)
 -
 
 Check out the code in action here: http://pennpierson.com/gm_save_states_between_rooms/
