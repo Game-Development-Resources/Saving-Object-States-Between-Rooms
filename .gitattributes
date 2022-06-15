@@ -1,1 +1,2 @@
 *.nsis linguist-detectable=false
+*.nsi linguist-detectable=false
